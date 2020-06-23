@@ -4,7 +4,7 @@ A simple, lightweight and reactive angular wed-based app for doing tax (VAT) cal
 # How to use
 Simply go to the URL -> https://johninquest.github.io/tax-app/ and play around with it. It is very simple, intuitive and reactive. Also feel free to use, share and play around with the code 🙂
 
-https://github.com/johninquest/tax-app/blob/master/tax_app_demo.png
+![test](https://github.com/johninquest/tax-app/blob/master/tax_app_demo.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 

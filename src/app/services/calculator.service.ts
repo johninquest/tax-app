@@ -28,5 +28,4 @@ export class CalculatorService {
       return total_after_tax.toFixed(2);
     }
   }
-
 }

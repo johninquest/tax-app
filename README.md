@@ -6,6 +6,7 @@ Simply go to the URL -> https://johninquest.github.io/tax-app/ and play around w
 
 ![test](https://github.com/johninquest/tax-app/blob/master/tax_app_demo.png)
 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
 ## Development server

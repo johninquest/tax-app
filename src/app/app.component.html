@@ -1,0 +1,34 @@
+<div class="page-title">TAX APP</div>
+
+<div class="input">
+  <mat-form-field>
+    <input matInput 
+           placeholder="AMOUNT" 
+           [formControl]="inputAmount" 
+           type="number" step="0.01">
+  </mat-form-field><br>
+
+  <mat-form-field>
+    <input matInput 
+           placeholder="TAX RATE (%)" 
+           [formControl]="inputTax" 
+           type="number">
+  </mat-form-field><br>
+
+  <mat-form-field class="vat-selector">
+    <mat-select [formControl]="taxType" placeholder="SELECT VAT">
+      <mat-option *ngFor="let vat of vats" [value]="vat.value">{{ vat.viewValue }}</mat-option>
+    </mat-select>
+  </mat-form-field><br>
+</div>  
+
+<div class="output">
+  <mat-list>
+    <mat-list-item>AMOUNT:&nbsp;<span class="output-data">{{ inputAmount.value }}</span></mat-list-item>
+    <mat-list-item>TAX RATE (%):&nbsp;<span class="output-data">{{ inputTax.value }}</span></mat-list-item>
+    <mat-list-item>TAX TYPE:&nbsp;<span class="output-data">{{ displayTaxType(taxType.value) }}</span></mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>CALCULATED TAX:&nbsp;<span class="output-data">{{ showCalculatedTax() }}</span></mat-list-item>
+    <mat-list-item>CALCULATED TOTAL:&nbsp;<span class="output-data">{{ showCalculatedTotal() }}</span></mat-list-item>
+  </mat-list>
+</div>

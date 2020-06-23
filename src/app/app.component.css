@@ -1,0 +1,26 @@
+.page-title {
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.output {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border: solid 0.2em #9575CD;
+    border-radius: 1em; 
+    width: 15em;
+    margin: 0 auto;
+}
+
+.output-data {
+    font-weight: bold;
+}

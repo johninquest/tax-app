@@ -1,8 +1,13 @@
 # TAX APP
 A simple, lightweight and reactive angular wed-based app for doing tax (VAT) calculations. 
 
-# How to use
 Simply go to the URL -> https://johninquest.github.io/tax-app/ and play around with it. It is very simple, intuitive and reactive. Also feel free to use, share and play around with the code 🙂
+
+# How to use
+1. Clone the repository into your preferred environment
+2. cd into the cloned directory
+3. Run "npm install" to get all required node modules. Make sure you have the latest version of node and npm installed before running "npm install"
+4. Now run "ng serve --open" to view the app
 
 ![test](https://github.com/johninquest/tax-app/blob/master/tax_app_demo.png)
 

@@ -1,26 +1,37 @@
 .page-title {
-    text-align: center;
-    margin: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00838f;
 }
 
 .input {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .output {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    border: solid 0.2em #9575CD;
-    border-radius: 1em; 
-    width: 15em;
-    margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: solid 0.1em #00838f;
+  border-radius: 1em;
+  width: 15em;
+  margin: 0 auto;
 }
 
 .output-data {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  bottom: 0.1em;
+  position: fixed;
+  width: 100%;
+  color: #00838f;
+  font-size: 1.1em;
 }

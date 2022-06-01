@@ -1,4 +1,14 @@
-# TaxApp
+# <p align="center">TAX CALCULATOR</p>
+
+### <p align="center">A simple angular-based web app for doing tax (VAT) calculations</p>
+
+<p align="center">
+  <img src="/app-demo.png" width="250" title="">
+</p>
+
+#### <p align="center">Try it out using the link below</p>
+#### <p align="center">https://johninquest.github.io/tax-app</p>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 

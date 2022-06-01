@@ -52,21 +52,6 @@ export class AppComponent implements OnInit {
     }
   }
 
-  /*   onChanges(): void {
-    this.inputAmount.valueChanges.subscribe(() => {
-      this.showCalculatedTax();
-      this.showCalculatedTotal();
-    });
-    this.inputTax.valueChanges.subscribe(() => {
-      this.showCalculatedTax();
-      this.showCalculatedTotal();
-    });
-    this.taxType.valueChanges.subscribe(() => {
-      this.showCalculatedTax();
-      this.showCalculatedTotal();
-    });
-  } */
-
   liveClock() {
     setInterval(() => {
       this.liveDateTime = new Date();

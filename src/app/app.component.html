@@ -1,4 +1,4 @@
-<div class="page-title">TAX APP</div>
+<div class="title">tax calculator</div>
 
 <div class="inputs">
   <mat-card>
@@ -7,11 +7,11 @@
       <input matInput [formControl]="inputAmount" type="number" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>TAX</mat-label>
+      <mat-label>TAX RATE (&#x25;)</mat-label>
       <input matInput [formControl]="inputTax" type="number" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>SELECT VAT</mat-label>
+      <mat-label>CALCULATION TYPE</mat-label>
       <mat-select [formControl]="taxType">
         <mat-option *ngFor="let vat of vats" [value]="vat.value">{{
           vat.viewValue
@@ -36,8 +36,8 @@
           <td>TAX RATE (%)</td>
           <td>{{ inputTax.value }}</td>
         </tr>
-        <tr>
-          <td>TAX TYPE</td>
+        <tr matToolTip="Value-Added Tax">
+          <td>CALCULATION TYPE</td>
           <td>{{ displayTaxType(taxType.value) }}</td>
         </tr>
         <tr>
@@ -67,6 +67,12 @@
       </tbody>
     </table>
   </mat-card>
+</div>
+<div style="margin-top: 0.5rem; text-align: center; color: grey">
+  *Forward = AMOUNT + TAX
+</div>
+<div style="margin-bottom: 0.5rem; text-align: center; color: grey">
+  *Reverse = AMOUNT - TAX
 </div>
 
 <div class="footer">{{ liveDateTime | date: "medium" }}</div>

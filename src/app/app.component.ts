@@ -22,15 +22,15 @@ export class AppComponent implements OnInit {
   liveDateTime = new Date();
 
   vats: VatDescriptor[] = [
-    { value: 'fVat', viewValue: 'Forward VAT' },
-    { value: 'rVat', viewValue: 'Reverse VAT' },
+    { value: 'fVat', viewValue: 'Forward' },
+    { value: 'rVat', viewValue: 'Reverse' },
   ];
 
   displayTaxType(tType: string) {
     if (tType === 'fVat') {
-      return 'Forward VAT';
+      return 'Forward';
     } else if (tType === 'rVat') {
-      return 'Reverse VAT';
+      return 'Reverse';
     } else {
       return '';
     }

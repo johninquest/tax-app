@@ -1,9 +1,10 @@
-.page-title {
+.title {
   text-align: center;
   margin: 2rem 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--primary-color);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .inputs {
@@ -48,6 +49,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 0.5rem 0 0.5rem 0;
+  border-bottom: 1px solid grey;
 }
 
 .outputs table tbody tr td:nth-child(1) {

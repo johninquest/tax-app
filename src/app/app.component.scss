@@ -19,6 +19,10 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom-style: none;
+  border-bottom: none;
 }
 
 .divider {
@@ -42,6 +46,8 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem;
 }
 
 .outputs table tbody tr {
@@ -49,7 +55,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 0.5rem 0 0.5rem 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.1rem solid grey;
 }
 
 .outputs table tbody tr td:nth-child(1) {

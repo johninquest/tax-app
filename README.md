@@ -7,9 +7,10 @@
 </p>
 
 #### <p align="center">Try it out using the link below</p>
+
 #### <p align="center"><a href="https://johninquest.github.io/tax-app/" target="_blank">https://johninquest.github.io/tax-app</a></p>
 
-
+<!--
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
 ## Development server
@@ -35,3 +36,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ -->

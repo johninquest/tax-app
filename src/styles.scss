@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+@import "@angular/material/theming";
+@include mat.core();
+
+$mytheme-primary: mat.define-palette(mat.$cyan-palette, 600); // #536dfe
+$mytheme-accent: mat.define-palette(mat.$orange-palette, 600); // #ffff8d
+$mytheme-warn: mat.define-palette(mat.$red-palette, 600); // #F44336
+
+$mytheme-all: mat.define-light-theme(
+  $mytheme-primary,
+  $mytheme-accent,
+  $mytheme-warn
+);
+@include mat.all-component-themes($mytheme-all);
+@import "./app/shared/css/colors";
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+$myfont: "Lato", sans-serif;
+* {
+  font: 100% $myfont;
+}
+
+html,
+body {
+  height: 100%;
+}

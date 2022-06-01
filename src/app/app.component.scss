@@ -1,0 +1,65 @@
+.page-title {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.inputs {
+  margin: 0 auto;
+  width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+.inputs mat-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.divider {
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+.outputs {
+  margin: 0 auto;
+  width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+.outputs mat-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.outputs table tbody tr {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.outputs table tbody tr td:nth-child(1) {
+  color: var(--primary-color);
+}
+
+.footer {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  bottom: 0;
+  position: fixed;
+  color: var(--primary-color);
+  font-size: 1.1em;
+  width: 100%;
+}

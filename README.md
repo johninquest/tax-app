@@ -3,7 +3,7 @@
 ### <p align="center">A simple angular-based web app for doing tax (VAT) calculations</p>
 
 <p align="center">
-  <img src="/app-demo.png" width="250" title="">
+  <img src="/app-demo.png" width="auto" title="">
 </p>
 
 #### <p align="center">Try it out using the link below</p>

@@ -7,7 +7,7 @@
 </p>
 
 #### <p align="center">Try it out using the link below</p>
-#### <p align="center">https://johninquest.github.io/tax-app</p>
+#### <p align="center"><a href="https://johninquest.github.io/tax-app/" target="_blank">https://johninquest.github.io/tax-app</a></p>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.

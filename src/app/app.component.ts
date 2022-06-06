@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { CalculatorService } from './services/calculator.service';
 import { VatDescriptor } from './shared/interface';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,19 @@ import { VatDescriptor } from './shared/interface';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  constructor(private _cs: CalculatorService) {}
+  constructor(private _cs: CalculatorService, private _ts: TranslateService) {
+    _ts.setDefaultLang(this.getBrowserLanguage(navigator.language));
+  }
+
+  getBrowserLanguage(sysLanguage: string) {
+    let languageToLowerCase = sysLanguage.toLocaleLowerCase();
+    let isDE = languageToLowerCase.startsWith('de');
+    if (isDE) {
+      return 'de';
+    } else {
+      return 'en';
+    }
+  }
 
   ngOnInit() {
     this.liveClock();

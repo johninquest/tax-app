@@ -1,17 +1,17 @@
-<div class="title">tax calculator</div>
+<div class="title">{{ "home.title" | translate }}</div>
 
 <div class="inputs">
   <mat-card>
     <mat-form-field appearance="fill">
-      <mat-label>AMOUNT</mat-label>
+      <mat-label>{{ "home.amount" | translate }}</mat-label>
       <input matInput [formControl]="inputAmount" type="number" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>TAX RATE (&#x25;)</mat-label>
+      <mat-label>{{ "home.tax_rate" | translate }}</mat-label>
       <input matInput [formControl]="inputTax" type="number" />
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>CALCULATION TYPE</mat-label>
+      <mat-label>{{ "home.calculation_type" | translate }}</mat-label>
       <mat-select [formControl]="taxType">
         <mat-option *ngFor="let vat of vats" [value]="vat.value">{{
           vat.viewValue
@@ -29,19 +29,19 @@
     <table>
       <tbody>
         <tr>
-          <td>AMOUNT</td>
+          <td>{{ "home.amount" | translate }}</td>
           <td>{{ inputAmount.value }}</td>
         </tr>
         <tr>
-          <td>TAX RATE (%)</td>
+          <td>{{ "home.tax_rate" | translate }}</td>
           <td>{{ inputTax.value }}</td>
         </tr>
         <tr matToolTip="Value-Added Tax">
-          <td>CALCULATION TYPE</td>
+          <td>{{ "home.calculation_type" | translate }}</td>
           <td>{{ displayTaxType(taxType.value) }}</td>
         </tr>
         <tr>
-          <td>CALCULATED TAX</td>
+          <td>{{ "home.calculated_tax" | translate }}</td>
           <td>
             {{
               showCalculatedTax(
@@ -53,7 +53,7 @@
           </td>
         </tr>
         <tr>
-          <td>CALCULATED TOTAL</td>
+          <td>{{ "home.calculated_total" | translate }}</td>
           <td>
             {{
               showCalculatedTotal(
@@ -69,10 +69,10 @@
   </mat-card>
 </div>
 <div style="margin-top: 0.5rem; text-align: center; color: grey">
-  *Forward = AMOUNT + TAX
+  *Forward = AMOUNT <span style="font-weight: bold">+</span> TAX
 </div>
 <div style="margin-bottom: 0.5rem; text-align: center; color: grey">
-  *Reverse = AMOUNT - TAX
+  *Reverse = AMOUNT <span style="font-weight: bold">-</span> TAX
 </div>
 
 <div class="footer">{{ liveDateTime | date: "medium" }}</div>

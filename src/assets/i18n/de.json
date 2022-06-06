@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "steuer (mwst) rechner",
+    "amount": "betrag",
+    "tax_rate": "steuersatz (%)",
+    "calculation_type": "berechnungsart",
+    "calculation_type_forward": "vorwärts",
+    "calculation_type_reverse": "rückwärts",
+    "calculated_tax": "berechnete steuer",
+    "calculated_total": "berechnete endbetrag",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  }
+}

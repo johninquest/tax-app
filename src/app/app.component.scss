@@ -25,6 +25,10 @@
   border-bottom: none;
 }
 
+.inputs mat-label {
+  text-transform: uppercase;
+}
+
 .divider {
   margin: 0 auto;
   padding: 1rem 0 1rem 0;
@@ -60,11 +64,13 @@
 
 .outputs table tbody tr td:nth-child(1) {
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .footer {
   text-align: center;
   margin: 2rem 0 1rem 0;
+  padding: 1remm 0 0 0;
   bottom: 0;
   position: fixed;
   color: var(--primary-color);

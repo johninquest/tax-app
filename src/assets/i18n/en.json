@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "tax (vat) calculator",
+    "amount": "amount",
+    "tax_rate": "tax rate (%)",
+    "calculation_type": "calculation type",
+    "calculation_type_forward": "forward",
+    "calculation_type_reverse": "reverse",
+    "calculated_tax": "calculated tax",
+    "calculated_total": "calculated total",
+    "message0": "Effizienz, Transparenz und Verantwortlichkeit fördern mit Hilfe einfacher Softwareapplikationen",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  }
+}

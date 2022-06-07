@@ -38,7 +38,9 @@
         </tr>
         <tr matToolTip="Value-Added Tax">
           <td>{{ "home.calculation_type" | translate }}</td>
-          <td>{{ displayTaxType(taxType.value) }}</td>
+          <td style="text-transform: uppercase">
+            {{ displayTaxType(taxType.value) }}
+          </td>
         </tr>
         <tr>
           <td>{{ "home.calculated_tax" | translate }}</td>

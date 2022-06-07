@@ -11,8 +11,35 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
   constructor(private _cs: CalculatorService, private _ts: TranslateService) {
+    _ts.addLangs(['de', 'en']);
     _ts.setDefaultLang(this.getBrowserLanguage(navigator.language));
   }
+
+  ngOnInit() {
+    this.liveClock();
+    this._ts
+      .get(['home.calculation_type_forward', 'home.calculation_type_reverse'])
+      .subscribe((_translation) => {
+        this.forwardVat = _translation['home.calculation_type_forward'];
+        this.reverseVat = _translation['home.calculation_type_reverse'];
+        console.log(
+          'this.forwardVat',
+          _translation['home.calculation_type_forward']
+        );
+        console.log(
+          'this.reverseVat',
+          _translation['home.calculation_type_reverse']
+        );
+      });
+  }
+
+  inputAmount = new FormControl();
+  inputTax = new FormControl();
+  taxType = new FormControl('');
+  forwardVat!: string;
+  reverseVat!: string;
+
+  liveDateTime = new Date();
 
   getBrowserLanguage(sysLanguage: string) {
     let languageToLowerCase = sysLanguage.toLocaleLowerCase();
@@ -24,26 +51,18 @@ export class AppComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    this.liveClock();
-  }
-
-  inputAmount = new FormControl();
-  inputTax = new FormControl();
-  taxType = new FormControl('');
-
-  liveDateTime = new Date();
-
   vats: VatDescriptor[] = [
-    { value: 'fVat', viewValue: 'Forward' },
-    { value: 'rVat', viewValue: 'Reverse' },
+    { value: 'fVat', viewValue: this.forwardVat ?? '' },
+    { value: 'rVat', viewValue: this.reverseVat ?? '' },
   ];
 
   displayTaxType(tType: string) {
     if (tType === 'fVat') {
-      return 'Forward';
+      // return 'Forward';
+      return this.forwardVat;
     } else if (tType === 'rVat') {
-      return 'Reverse';
+      // return 'Reverse';
+      return this.reverseVat;
     } else {
       return '';
     }

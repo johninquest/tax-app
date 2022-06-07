@@ -4,11 +4,9 @@
     "amount": "betrag",
     "tax_rate": "steuersatz (%)",
     "calculation_type": "berechnungsart",
-    "calculation_type_forward": "vorwärts",
-    "calculation_type_reverse": "rückwärts",
+    "calculation_type_forward": "Vorwärts",
+    "calculation_type_reverse": "Rückwärts",
     "calculated_tax": "berechnete steuer",
-    "calculated_total": "endbetrag",
-    "imprint": "Impressum",
-    "privacy": "Datenschutz"
+    "calculated_total": "endbetrag"
   }
 }

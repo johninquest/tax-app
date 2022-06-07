@@ -20,16 +20,8 @@ export class AppComponent implements OnInit {
     this._ts
       .get(['home.calculation_type_forward', 'home.calculation_type_reverse'])
       .subscribe((_translation) => {
-        this.forwardVat = _translation['home.calculation_type_forward'];
-        this.reverseVat = _translation['home.calculation_type_reverse'];
-        console.log(
-          'this.forwardVat',
-          _translation['home.calculation_type_forward']
-        );
-        console.log(
-          'this.reverseVat',
-          _translation['home.calculation_type_reverse']
-        );
+        this.vats[0].viewValue = _translation['home.calculation_type_forward'];
+        this.vats[1].viewValue = _translation['home.calculation_type_reverse'];
       });
   }
 
@@ -52,17 +44,17 @@ export class AppComponent implements OnInit {
   }
 
   vats: VatDescriptor[] = [
-    { value: 'fVat', viewValue: this.forwardVat ?? '' },
-    { value: 'rVat', viewValue: this.reverseVat ?? '' },
+    { value: 'fVat', viewValue: '' },
+    { value: 'rVat', viewValue: '' },
   ];
 
   displayTaxType(tType: string) {
     if (tType === 'fVat') {
       // return 'Forward';
-      return this.forwardVat;
+      return this.vats[0].viewValue;
     } else if (tType === 'rVat') {
       // return 'Reverse';
-      return this.reverseVat;
+      return this.vats[1].viewValue;
     } else {
       return '';
     }

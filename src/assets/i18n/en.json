@@ -7,6 +7,7 @@
     "calculation_type_forward": "Forward",
     "calculation_type_reverse": "Reverse",
     "calculated_tax": "calculated tax",
-    "calculated_total": "calculated total"
+    "calculated_total": "calculated total",
+    "tax_name": "tax"
   }
 }

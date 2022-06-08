@@ -75,15 +75,17 @@
 </div>
 <div style="margin-top: 0.5rem; text-align: center; text-transform: uppercase">
   *{{ "home.calculation_type_forward" | translate }} =
-  {{ "home.amount" | translate }} <span style="font-weight: bold">+</span>
-  {{ "home.tax_rate" | translate }}
+  {{ "home.amount" | translate }}
+  <span style="font-weight: bold">+</span>
+  {{ "home.tax_name" | translate }}
 </div>
 <div
   style="margin-bottom: 0.5rem; text-align: center; text-transform: uppercase"
 >
   *{{ "home.calculation_type_reverse" | translate }} =
-  {{ "home.amount" | translate }} <span style="font-weight: bold">-</span>
-  {{ "home.tax_rate" | translate }}
+  {{ "home.amount" | translate }}
+  <span style="font-weight: bold">-</span>
+  {{ "home.tax_name" | translate }}
 </div>
 
 <div class="footer">{{ liveDateTime | date: "medium" }}</div>

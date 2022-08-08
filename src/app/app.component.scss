@@ -76,3 +76,14 @@
   font-size: 1.1em;
   width: 100%;
 }
+
+.sig {
+  color: var(--primary-color);
+  text-align: center;
+  margin: 3rem auto 0.5rem auto;
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+    // border-bottom: 0.1rem solid var(--primary-color);
+  }
+}

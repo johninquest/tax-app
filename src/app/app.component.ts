@@ -81,4 +81,9 @@ export class AppComponent implements OnInit {
       this.liveDateTime = new Date();
     }, 1000);
   }
+
+  goToUrl(targetUrl: string) {
+    window.open(targetUrl, '_blank');
+    window.focus();
+  }
 }

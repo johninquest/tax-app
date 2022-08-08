@@ -89,3 +89,9 @@
 </div>
 
 <div class="footer">{{ liveDateTime | date: "medium" }}</div>
+
+<div class="sig" (click)="goToUrl('https://johnapps.de')">
+  <span>&copy;</span><span>&nbsp;</span> <span>JOHN APPS</span>
+  <span>&nbsp;</span>
+  <span>{{ liveDateTime | date: "yyyy" }}</span>
+</div>

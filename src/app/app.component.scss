@@ -73,7 +73,7 @@
   padding: 1rem 0 0 0;
   bottom: 0;
   color: var(--primary-color);
-  font-size: 1.1rem;
+  // font-size: 1.1rem;
   width: 100%;
 }
 
@@ -84,7 +84,7 @@
   cursor: pointer;
   width: 8rem;
   &:hover {
-    font-weight: bold;
     border-bottom: 0.1rem solid var(--primary-color);
+    font-weight: bold;
   }
 }

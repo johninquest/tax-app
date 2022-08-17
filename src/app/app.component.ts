@@ -25,9 +25,9 @@ export class AppComponent implements OnInit {
       });
   }
 
-  inputAmount = new FormControl();
-  inputTax = new FormControl();
-  taxType = new FormControl('');
+  inputAmount = new FormControl<number>(0, { nonNullable: true });
+  inputTax = new FormControl<number>(0, { nonNullable: true });
+  taxType = new FormControl<string>('', { nonNullable: true });
   forwardVat!: string;
   reverseVat!: string;
 
